@@ -1,0 +1,147 @@
+# =========================
+# Databricks files
+# =========================
+
+# Databricks notebook metadata
+.databricks/
+
+# Databricks bundle generated files
+.databricks/bundle/
+
+# Deployment state files
+state/
+
+# Databricks asset bundle overrides
+*.json.bak
+
+
+# =========================
+# Python files
+# =========================
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# =========================
+# Jupyter / Notebook files
+# =========================
+
+.ipynb_checkpoints/
+
+# Temporary notebook checkpoints
+*.ipynb_checkpoints/
+
+
+# =========================
+# Spark / Databricks outputs
+# =========================
+
+# Spark event logs
+spark-events/
+
+# Spark warehouse
+spark-warehouse/
+
+# Delta table logs (only ignore if stored locally)
+_delta_log/
+
+# Temporary output files
+tmp/
+temp/
+output/
+outputs/
+
+
+# =========================
+# IDE files
+# =========================
+
+# VS Code
+.vscode/
+
+# IntelliJ / PyCharm
+.idea/
+
+# Eclipse
+.project
+.classpath
+
+
+# =========================
+# Operating system files
+# =========================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+
+# =========================
+# Environment variables & secrets
+# =========================
+
+.env
+.env.*
+*.env
+
+# Credentials
+credentials.json
+secrets.json
+
+# Cloud credentials
+.aws/
+.azure/
+.gcp/
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+
+# =========================
+# Data files (optional)
+# =========================
+
+# Avoid committing large datasets
+*.csv
+*.parquet
+*.jsonl
+*.orc
+
+# Local data folders
+data/
+datasets/
