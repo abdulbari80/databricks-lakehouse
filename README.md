@@ -1,5 +1,5 @@
 # Databricks Lakehouse
-Data lakehouse contains raw data extracted from ERP and CRM systems as well as three tier data warehouse adhering to medallion architecture. 
+The raw data is extracted from ERP and CRM systems and mounted into a volume within unity catalog. Then, a data warehouse is built having three tiers adhering to the medallion architecture best practices.
 
 [![Layout Diagram](architecture/layout.png)](architecture/layout.png)
 
