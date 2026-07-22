@@ -23,7 +23,7 @@ flowchart LR
     end
 
     %% ===== Silver Layer =====
-    subgraph SLV["Silver Layer (Cleansed)"]
+    subgraph SLV["Silver Layer (Transformed)"]
         S_CRM_SALES["crm_sales_details"]
         S_CRM_CUST["crm_cust_info"]
         S_CRM_PRD["crm_prd_info"]
@@ -34,7 +34,7 @@ flowchart LR
     end
 
     %% ===== Gold Layer =====
-    subgraph GLD["Gold Layer (Analytics)"]
+    subgraph GLD["Gold Layer (Analytics-ready)"]
         FACT_SALES["fact_sales"]
         DIM_CUSTOMERS["dim_customers"]
         DIM_PRODUCTS["dim_products"]
@@ -92,3 +92,5 @@ flowchart LR
     - Facts reference conformed dimensions
 
     - Business logic is applied once and reused everywhere
+ 
+[![Data Integration](architecture/data_integration.png)](architecture/data_integration.png)
