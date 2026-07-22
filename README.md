@@ -1,12 +1,12 @@
-# databricks-lakehouse
-A data lakehouse with medallion architecture built in Databricks free tier
+# Databricks Lakehouse
+Data lakehouse contains raw data extracted from ERP and CRM systems as well as three tier data warehouse adhering to medallion architecture. 
 
-[![Layout Diagram](Data-Warehouse/Architecture/DWH_layout.png)](Data-Warehouse/Architecture/DWH_layout.png)
+[![Layout Diagram](databricks-lakehouse/architecture/layout.png)](databricks-lakehouse/architecture/layout.png)
 
 ```mermaid
 flowchart LR
     %% ===== Sources =====
-    subgraph SRC["Source Systems"]
+    subgraph SRC["Unity Catalog"]
         CRM["CRM"]
         ERP["ERP"]
     end
