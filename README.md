@@ -1,6 +1,9 @@
 # databricks-lakehouse
 A data lakehouse with medallion architecture built in Databricks free tier
 
+[![Layout Diagram](Data-Warehouse/Architecture/DWH_layout.png)](Data-Warehouse/Architecture/DWH_layout.png)
+
+```mermaid
 flowchart LR
     %% ===== Sources =====
     subgraph SRC["Source Systems"]
@@ -63,4 +66,29 @@ flowchart LR
     S_CRM_CUST --> DIM_CUSTOMERS
     S_ERP_CUST --> DIM_CUSTOMERS
     S_ERP_LOC --> DIM_CUSTOMERS
+```
+### Modeling Principles
 
+- Bronze Layer
+
+    - Immutable, replayable raw data
+
+    - Schema changes tolerated
+
+    - No joins or aggregations
+
+- Silver Layer
+
+    - One row = one business entity/event
+
+    - Cleaned, deduplicated, standardized
+
+    - Still traceable to source
+
+- Gold Layer
+
+    - Star schema optimized for analytics
+
+    - Facts reference conformed dimensions
+
+    - Business logic is applied once and reused everywhere
