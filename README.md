@@ -1,7 +1,7 @@
 # Databricks Lakehouse
 Data lakehouse contains raw data extracted from ERP and CRM systems as well as three tier data warehouse adhering to medallion architecture. 
 
-[![Layout Diagram](databricks-lakehouse/architecture/layout.png)](databricks-lakehouse/architecture/layout.png)
+[![Layout Diagram](databricks-lakehouse/blob/main/architecture/layout.png)](databricks-lakehouse/blob/main/architecture/layout.png)
 
 ```mermaid
 flowchart LR
